@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantity: 1
+  user: one
+  shipping_address: one
+  unit_price: 9.99
+  subtotal: 9.99
+  shipping_service: one
+  total: 9.99
+  tax: 9.99
+  status: MyString
+  msgName: MyString
+
+two:
+  quantity: 1
+  user: two
+  shipping_address: two
+  unit_price: 9.99
+  subtotal: 9.99
+  shipping_service: two
+  total: 9.99
+  tax: 9.99
+  status: MyString
+  msgName: MyString
