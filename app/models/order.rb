@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
   belongs_to :user
-  belongs_to :shipping_address
-  belongs_to :shipping_service
+  belongs_to :address
+  belongs_to :service
 end
