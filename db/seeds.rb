@@ -26,4 +26,6 @@ customer = User.create!(email: 'customer@example.com', password: 'password', pas
 
 # orders
 Order.delete_all()
-o1 = Order.create!(quantity: 250, user: customer, address: a1, unit_price: 2.50, subtotal: 625.00, service: fedex, total: 744.38, tax: 54.75, status: 'order-placed', mfgName: nil)
+o1 = Order.create!(quantity: 250, user: customer, address: a1, unit_price: 2.50, service: fedex, tax: 54.75, status: 'order-placed', mfgName: nil)
+
+o2 = Order.create!(quantity: 100, user: customer, address: a1, unit_price: 3.00, service: fedex, tax: 54.75, status: 'order-placed', mfgName: nil)

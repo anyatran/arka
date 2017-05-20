@@ -3,5 +3,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
-  has_many :orders
+  has_many :orders, :dependent => :destroy
+
+  def to_s
+    "#{email}"
+  end
 end
